@@ -6,6 +6,7 @@ struct ImageInformation {
     let name: String
     let description: String
     let image: UIImage
+    let buttonAction: String
 }
 
 class ViewController: UIViewController, ARSKViewDelegate {
@@ -47,7 +48,7 @@ class ViewController: UIViewController, ARSKViewDelegate {
                         let ciimage = CIImage(image: uiimage),
                             let cgimage = self.convertCIImageToCGImage(inputImage: ciimage)else { return }
                         
-                        let arImage = ARReferenceImage(cgimage, orientation: CGImagePropertyOrientation.up, physicalWidth: 0.2)
+                        let arImage = ARReferenceImage(cgimage, orientation: .up, physicalWidth: 0.2)
                         
                         arImage.name = "CGImage Test"
                         let configuration = ARWorldTrackingConfiguration()
@@ -55,7 +56,7 @@ class ViewController: UIViewController, ARSKViewDelegate {
                         
                         self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
                         
-                        self.images = [arImage.name : ImageInformation(name: "This is a title", description: "This is a description", image: uiimage)]
+                        self.images = [arImage.name : ImageInformation(name: "This is a title", description: "It was labeled a year to “reinvent,” but the 2017 Nebraska volleyball team had other plans. A 30-minute documentary captures an unexpected tile run and the drama of the 2017 Nebraska volleyball season.", image: uiimage, buttonAction: "http://d34oa379y8jhb4.cloudfront.net/NETVOD/50007115.mp4")]
                     }
                 }
             }

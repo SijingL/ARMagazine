@@ -27,7 +27,6 @@
 		003D4AB820836F3000C6E4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		003D4ABB20836F3000C6E4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		003D4ABD20836F3100C6E4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		004D308F2095D38600BA1C03 /* ARMuseum - Final App.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ARMuseum - Final App.m4v"; sourceTree = "<group>"; };
 		00C5AFE3208DF37000943839 /* ImageInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +69,6 @@
 				003D4ABA20836F3000C6E4A0 /* LaunchScreen.storyboard */,
 				003D4ABD20836F3100C6E4A0 /* Info.plist */,
 				00C5AFE3208DF37000943839 /* ImageInformationViewController.swift */,
-				004D308F2095D38600BA1C03 /* ARMuseum - Final App.m4v */,
 			);
 			path = ARMagazine;
 			sourceTree = "<group>";
